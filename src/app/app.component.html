@@ -13,8 +13,17 @@
   </button>
   <button
     mat-raised-button
+    (click)="openLoginDialog()"
+    style="margin-right: 10px;"
     color="primary"
   >
     Login
+  </button>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="openMoviesDialog()"
+  >
+    All Movies
   </button>
 </div>
