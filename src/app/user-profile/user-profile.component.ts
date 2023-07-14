@@ -8,7 +8,6 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 
 // This import brings in the API calls we created in 6.2
 import { FetchApiDataService } from '../fetch-api-data.service';
-
 import { Router } from '@angular/router';
 import { formatDate } from '@angular/common';
 
