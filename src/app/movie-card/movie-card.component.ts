@@ -58,6 +58,11 @@ export class MovieCardComponent {
     });
   }
 
+    /**
+   * Opens the director dialog.
+   * @param name The director's name to show on the dialog (title)
+   * @param bio The director's biography to show on the dialog
+  */
   openDirector(name: string, bio: string): void {
     this.dialog.open(MovieInfoComponent, {
       data: {
@@ -68,6 +73,10 @@ export class MovieCardComponent {
     });
   }
 
+    /**
+   * Opens the movie description dialog.
+   * @param description The text to show on the dialog
+   */
   openSynopsis(description: string): void {
     this.dialog.open(MovieInfoComponent, {
       data: {
@@ -78,6 +87,10 @@ export class MovieCardComponent {
     });
   }
 
+    /**
+   * Calls the add favorite movie method on the API.
+   * @param id The movie ID
+   */
   addFavorite(id: string): void {
     this.fetchApiData.addFavoriteMovie(id).subscribe((result) => {
 
